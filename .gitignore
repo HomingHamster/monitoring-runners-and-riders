@@ -3,8 +3,12 @@
 
 # Build Folder
 bin/
+build/
 
-# GITHUB STANDARD C
+# IDE files
+nbproject/
+
+# GITHUB STANDARD C BELOW
 
 # Object files
 *.o
