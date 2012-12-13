@@ -19,7 +19,6 @@ int main (void) {
     //initialise the program
     
     //present the menu
-    
-    printf ("Hello, world!\n");
+    init();
     return 0;
 }
