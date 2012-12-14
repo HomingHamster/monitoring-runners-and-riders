@@ -8,7 +8,7 @@
 #ifndef MENU_H
 #define	MENU_H
 
-void menu();
+int menu();
 
 #endif	/* MENU_H */
 

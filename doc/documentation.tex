@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{listings}
+\title{CS23710 C and Unix: Monitoring Runners and Riders}
+\author{Felix Farquharson}
+\date{December 2012}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+The task was to create a peice of software to monitor runners and riders in a race situation. This software had to be written in ANSI compliant C code. I chose to use the C99 standard.
+
+\section{Design}
+
+\subsection{File Structure}
+It was clear that using more than one file would provide benifits. Some of the main benifits are allowing errors to be found more easily and also to seperate the parts of the program out and allow it to be visualised more easily. I seperated the program out into the files listed below.
+
+\subsubsection{main.c}
+There should be little logic in this file, it should be used to start the initialisation and then to run the menu in a loop.
+
+\subsubsection{init.c and init.h}
+The init function allows you to input the relevant filenames and sets up the program with all of the values it needs to run.
+
+\subsubsection{menu.c and menu.h}
+The menu function presents a menu to the user and takes a response, it allows the user to re read all of the input files, query the current location/status of an individual competitor, ask how many competitors have not yet started, ask how many competitors are out on the courses, ask how many competitors have finished, manually supply times at which individual competitors have reached time checkpoints, read in a file of times at which competitors have reached checkpoints, produce a results list of competitors including their courses/times and quit the application.
+
+\subsubsection{fileio.c and fileio.h}
+These functions handle the file interaction. They are responsible for interpreting the input files and extracting the relevant data.
+
+\subsubsection{Makefile}
+A custom makefile was created because it allows a better understanding of the way the application works. 
+
+\subsubsection{Directory Structure and Datafiles}
+All of the folders are are 3 letter abbrevations. The source files are not stored in the root of the folder and the bin folder holds the compiled binary.
+
+\section{Implimentation}
+
+\section{Testing}
+
+\section{Review}
+
+\section{Appendix 1 - Source Code}
+
+\subsection{main.c}
+\lstinputlisting{../src/main.c}
+
+\subsection{init.h}
+\lstinputlisting{../src/init.h}
+
+\subsection{init.c}
+\lstinputlisting{../src/init.c}
+
+\subsection{menu.h}
+\lstinputlisting{../src/menu.h}
+
+\subsection{menu.c}
+\lstinputlisting{../src/menu.c}
+
+\subsection{fileio.h}
+\lstinputlisting{../src/fileio.h}
+
+\subsection{fileio.c}
+\lstinputlisting{../src/fileio.c}
+
+\subsection{Makefile}
+\lstinputlisting{../Makefile}
+\end{document}

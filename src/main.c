@@ -20,11 +20,13 @@ int main (void) {
     //initialise the program
     init();
     
-    /*
     //present the menu
     while (1) {
-        menu();
-    }*/
+        int i = menu();
+        if (i == 1){
+            break;
+        }
+    }
     
     return 0;
 }

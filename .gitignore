@@ -8,6 +8,12 @@ build/
 # IDE files
 nbproject/
 
+#latex junk
+doc/*.aux
+doc/*.log
+doc/*.pdf
+doc/*.toc
+
 # GITHUB STANDARD C BELOW
 
 # Object files
