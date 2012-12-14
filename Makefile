@@ -1,7 +1,7 @@
 all: main
 
 main: init.o menu.o fileio.o src/main.c
-	gcc -Wall build/init.o src/main.c -o bin/mrar
+	gcc -Wall build/init.o build/menu.o build/fileio.o src/main.c -o bin/mrar
 
 init.o: src/init.c
 	gcc -Wall -c src/init.c -o build/init.o

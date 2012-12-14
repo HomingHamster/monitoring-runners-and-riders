@@ -8,5 +8,7 @@
 #ifndef FILEIO_H
 #define	FILEIO_H
 
+void parse_name_file(char filename[]);
+
 #endif	/* FILEIO_H */
 

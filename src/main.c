@@ -12,13 +12,19 @@
 //      infinate loop until exit.
 
 //include the file operations
+#include "fileio.h"
 //      will handle reading in and interpreting the
 //      files.
 
 int main (void) {
     //initialise the program
-    
-    //present the menu
     init();
+    
+    /*
+    //present the menu
+    while (1) {
+        menu();
+    }*/
+    
     return 0;
 }

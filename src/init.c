@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include "fileio.h"
 
 void init() {
     char name_filename[50], nodes_filename[50], tracks_filename[50],
             courses_filename[50], entrants_filename[50];
+    
     
     printf("Welcome to Monitor v0.0\n");
     printf("We need you to enter some filenames below.\n");
@@ -13,6 +15,7 @@ void init() {
     
     printf("\nThe name file: ");
     scanf(" %s", name_filename);
+    parse_name_file(name_filename);
     
     printf("\nThe nodes file: ");
     scanf(" %s", nodes_filename);
